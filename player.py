@@ -33,8 +33,7 @@ pygame.mixer.music.play()
 #  pygame.mixer.music.queue(mp3)
 
 try:
-  scnt = 0
-  while scnt < 3600/5:
+  while True:
     time.sleep(5)
     if not pygame.mixer.music.get_busy():
       if len(mp3_list) > 0:
